@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Arizonia&display=swap");
+#header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+#header a {
+  margin-left: 3%;
+}
+
+body {
+  font-family: alata, serif;
+  margin: 0;
+}
+
+.logo-img {
+  height: 54px;
+  width: 78px;
+  margin-left: 3%;
+}
+
+.nav {
+  margin-right: 3%;
+}
+
+.nav-ul li {
+  list-style: none;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #000000;
+}
+
+h2 {
+  color: #009C99;
+  font-family: arizonia, sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1%;
+}
+
+/*  FOOTER  */
+.footer {
+  min-height: 9vh;
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #EFAA7B;
+  font-family: Alata, serif;
+  font-size: 14px;
+  margin-top: 4%;
+}
+
+.footer-copyright {
+  text-align: end;
+  min-width: 45%;
+}
+
+.footer-copyright p {
+  color: white;
+}
+
+.icon {
+  max-width: 50%;
+  max-height: 50%;
+  min-height: 70%;
+  min-width: 70%;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  min-width: 45%;
+}
+
+.icon-container a {
+  display: flex;
+  align-items: center;
+  max-width: 10%;
+  max-height: 10%;
+  min-height: 5%;
+  min-width: 5%;
+}
+
+/*  END FOOTER  */
+@media only screen and (max-width: 720px) {
+  h2 {
+    margin-top: 1%;
+    font-size: 30px;
+  }
+  .icon-container a {
+    min-width: 22%;
+    padding-left: 3%;
+  }
+  .footer-copyright {
+    padding-right: 3%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  h2 {
+    margin-top: 1%;
+    font-size: 20px;
+  }
+  h3 {
+    margin-top: 2%;
+    font-size: 12px;
+  }
+  .icon-container a {
+    min-width: 20%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  h2 {
+    margin-top: 1%;
+    font-size: 14px;
+  }
+  h3 {
+    margin-top: 2%;
+    font-size: 12px;
+  }
+  .icon-container a {
+    min-width: 22%;
+    padding-left: 3%;
+  }
+  .footer-copyright {
+    padding-right: 3%;
+  }
+}
+h1 {
+  color: #009C99;
+  text-align: center;
+  font-family: Arizonia;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 124.8%; /* 87.36px */
+}
+
+h3 {
+  color: #009C99;
+  font-family: Almarai;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 118.3%; /* 26.026px */
+  letter-spacing: 0.44px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.container__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex: 1 0 48%;
+  box-sizing: border-box;
+  margin: 1%;
+}
+.container__form p {
+  color: #515151;
+  font-family: Alata;
+  font-size: 16px;
+  font-style: normal;
+  flex: 1 0 100%;
+  box-sizing: border-box;
+  margin: 5px;
+}
+.container__form input {
+  border-radius: 14px;
+  background: #A9E1E2;
+  height: 60px;
+  padding: 0;
+  flex: 1 0 100%;
+  box-sizing: border-box;
+  margin: 5px;
+  border: none;
+}
+.container__form textarea {
+  height: 215px;
+  border-radius: 14px;
+  background: #A9E1E2;
+  padding: 0;
+  flex: 1 0 100%;
+  box-sizing: border-box;
+  margin: 5px;
+  border: none;
+}
+.container__form button {
+  height: 60px;
+  border-radius: 14px;
+  background: #60C1BF;
+  padding: 0;
+  flex: 1 0 100%;
+  box-sizing: border-box;
+  margin: 5px;
+  border: none;
+  color: white;
+}
+
+::placeholder {
+  padding-left: 5%;
+  color: #fff;
+}
+
+@media only screen and (max-width: 320px) {
+  .icon-container a {
+    min-width: 22%;
+    padding-left: 3%;
+  }
+  .footer-copyright {
+    padding-right: 3%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container__form p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .img-container {
+    display: none;
+  }
+  .icon-container a {
+    min-width: 22%;
+    padding-left: 3%;
+  }
+  .footer-copyright {
+    padding-right: 3%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container__form p {
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  .icon-container a {
+    min-width: 22%;
+    padding-left: 3%;
+  }
+  .footer-copyright {
+    padding-top: 1%;
+    padding-right: 3%;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */
